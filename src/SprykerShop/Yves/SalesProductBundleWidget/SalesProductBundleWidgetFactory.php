@@ -22,33 +22,21 @@ use Symfony\Component\Form\FormTypeInterface;
  */
 class SalesProductBundleWidgetFactory extends AbstractFactory
 {
-    /**
-     * @return \SprykerShop\Yves\SalesProductBundleWidget\Extractor\ItemExtractorInterface
-     */
     public function createItemExtractor(): ItemExtractorInterface
     {
         return new ItemExtractor();
     }
 
-    /**
-     * @return \SprykerShop\Yves\SalesProductBundleWidget\Expander\ReturnCreateFormExpanderInterface
-     */
     public function createReturnCreateFormExpander(): ReturnCreateFormExpanderInterface
     {
         return new ReturnCreateFormExpander();
     }
 
-    /**
-     * @return \SprykerShop\Yves\SalesProductBundleWidget\Handler\ReturnCreateFormHandlerInterface
-     */
     public function createReturnCreateFormHandler(): ReturnCreateFormHandlerInterface
     {
         return new ReturnCreateFormHandler();
     }
 
-    /**
-     * @return \Symfony\Component\Form\FormTypeInterface
-     */
     public function createReturnProductBundleForm(): FormTypeInterface
     {
         return new ReturnProductBundleForm();

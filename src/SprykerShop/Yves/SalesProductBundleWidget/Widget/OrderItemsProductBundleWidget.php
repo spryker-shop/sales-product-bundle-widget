@@ -27,17 +27,11 @@ class OrderItemsProductBundleWidget extends AbstractWidget
         $this->addProductBundlesParameter($itemTransfers);
     }
 
-    /**
-     * @return string
-     */
     public static function getName(): string
     {
         return 'OrderItemsProductBundleWidget';
     }
 
-    /**
-     * @return string
-     */
     public static function getTemplate(): string
     {
         return '@SalesProductBundleWidget/views/ordered-product-bundle-list/ordered-product-bundle-list.twig';

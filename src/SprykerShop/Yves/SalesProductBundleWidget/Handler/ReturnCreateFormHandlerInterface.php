@@ -11,11 +11,5 @@ use Generated\Shared\Transfer\ReturnCreateRequestTransfer;
 
 interface ReturnCreateFormHandlerInterface
 {
-    /**
-     * @param array $returnItemList
-     * @param \Generated\Shared\Transfer\ReturnCreateRequestTransfer $returnCreateRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\ReturnCreateRequestTransfer
-     */
     public function handleFormData(array $returnItemList, ReturnCreateRequestTransfer $returnCreateRequestTransfer): ReturnCreateRequestTransfer;
 }

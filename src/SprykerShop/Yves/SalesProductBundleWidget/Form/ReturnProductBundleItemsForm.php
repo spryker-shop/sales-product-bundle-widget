@@ -63,11 +63,6 @@ class ReturnProductBundleItemsForm extends AbstractType
             ->addCustomReasonField($builder);
     }
 
-    /**
-     * @param \Symfony\Component\OptionsResolver\OptionsResolver $resolver
-     *
-     * @return void
-     */
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setRequired([

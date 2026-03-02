@@ -22,12 +22,6 @@ class ReturnCreateFormHandler implements ReturnCreateFormHandlerInterface
      */
     protected const CUSTOM_REASON_VALUE = 'custom_reason';
 
-    /**
-     * @param array $returnItemList
-     * @param \Generated\Shared\Transfer\ReturnCreateRequestTransfer $returnCreateRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\ReturnCreateRequestTransfer
-     */
     public function handleFormData(array $returnItemList, ReturnCreateRequestTransfer $returnCreateRequestTransfer): ReturnCreateRequestTransfer
     {
         $productBundleList = $returnItemList[ReturnProductBundleForm::FIELD_PRODUCT_BUNDLES] ?? [];
